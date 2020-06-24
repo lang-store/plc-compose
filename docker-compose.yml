@@ -3,7 +3,7 @@ version: '3.6'
 services:
 
     operationstore-db:
-        image: ${BUILD_REGISTRY}/postgres
+        image: postgres
         environment:
           POSTGRES_DB: operationdb
           POSTGRES_USER: postgres
