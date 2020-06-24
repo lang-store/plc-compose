@@ -1,0 +1,18 @@
+version: '3.6'
+
+services:
+
+    operationstore-db:
+        image: ${BUILD_REGISTRY}/postgres
+        environment:
+          POSTGRES_DB: operationdb
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: admin
+        ports:
+          - "5432:5432"
+        volumes:
+            - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+
+networks:
+  default: {}
