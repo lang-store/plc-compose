@@ -14,7 +14,7 @@ CREATE TABLE concepts
 	name text NOT NULL UNIQUE,
 	category VARCHAR (50) NOT NULL,
 	method VARCHAR (50) NOT NULL,
-	language_id INT REFERENCES languages(id) NOT NULL
+	language_id INT REFERENCES languages(id) ON DELETE CASCADE NOT NULL 
 );
 
 INSERT INTO concepts (name, category, method, language_id) VALUES ('Ключевое слово', 'E', 'C', 1);
@@ -24,7 +24,7 @@ CREATE TABLE examples
 	id serial PRIMARY KEY,
 	example text NOT NULL,
 	notes text NOT NULL,
-	concept_id INT REFERENCES concepts(id) NOT NULL
+	concept_id INT REFERENCES concepts(id) ON DELETE CASCADE NOT NULL
 );
 
 

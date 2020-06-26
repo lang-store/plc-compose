@@ -2,7 +2,7 @@ version: '3.6'
 
 services:
 
-    operationstore-db:
+    lang-db:
         image: postgres
         environment:
           POSTGRES_DB: operationdb
