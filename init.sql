@@ -11,7 +11,7 @@ INSERT INTO languages (name) VALUES ('Паскаль');
 CREATE TABLE concepts
 (
 	id serial PRIMARY KEY,
-	name text NOT NULL UNIQUE,
+	name text NOT NULL,
 	category VARCHAR (50) NOT NULL,
 	method VARCHAR (50) NOT NULL,
 	language_id INT REFERENCES languages(id) ON DELETE CASCADE NOT NULL 
