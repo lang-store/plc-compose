@@ -707,3 +707,155 @@ except:
  INSERT INTO concepts (name, category, method, language_id) VALUES ('cout', 'S', 'S', (select id from languages where name = 'C++')); 
 
  INSERT INTO concepts (name, category, method, language_id) VALUES ('cin', 'S', 'S', (select id from languages where name = 'C++')); 
+
+ INSERT INTO languages (name) VALUES ('Swift'); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Type; (Int, Float, String, Boolean)', 'E', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('(Type, Type …); (кортежи)', 'E', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('(Type…) -> (Type…);', 'E', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Type?;', 'E', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('nil;', 'E', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('=', 'E', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('!=', 'E', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('===', 'E', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('let x = Type();', 'E', 'M', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('var x = Type();', 'E', 'M', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('&', 'E', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('*', 'E', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('struct', 'E', 'S', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('class', 'E', 'S', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('protocol', 'E', 'S', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('enum', 'E', 'S', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('<T>class', 'M', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('+', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('-', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('*', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('/', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('&&', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES (' ||', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('!expr', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('&', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES (' |', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES (' ^', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('&+', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES (' <<', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES (' >>', 'M', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('func foo(args )->type{return Type()}', 'M', 'M', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('if else;', 'M', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('guard let x = {expr true} {expr false};', 'M', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Замыкания; label имя маркера : while условие { исполняемый код } ;', 'M', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('extension', 'M', 'S', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Set', 'M', 'S', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Array', 'M', 'S', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Dictionary', 'M', 'S', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Не определён тип', 'C', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Не соответствует ТД', 'C', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Не соответствует ТД параметра', 'C', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Выход из диапозона', 'C', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('static', 'C', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('let', 'C', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('>', 'C', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES (' <', 'C', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES (' >=', 'C', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES (' <=', 'C', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('in a...b;', 'C', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('in a..<b;', 'C', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('let a = Type()', 'C', 'M', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('let b = a.property', 'C', 'M', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('is;', 'C', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('switch case;', 'C', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('return;', 'C', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('break;', 'C', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('continue;', 'C', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('throw', 'C', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('fallthrough', 'C', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('do { try expr } catch (ex: Type) {};', 'C', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('try! ;', 'C', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('try?;', 'C', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Различные исключения', 'C', 'S', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('func foo (vararg…)', 'S', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('nil', 'S', 'V', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('функции параметры', 'S', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('параметри зованные методы', 'S', 'E', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('println();', 'S', 'M', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Классы для работы с сетью;', 'S', 'M', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('Классы для работы с файлами', 'S', 'M', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('for in;', 'S', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('while;', 'S', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('repeat-while;', 'S', 'C', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('static func', 'S', 'S', (select id from languages where name = 'Swift')); 
+
+ INSERT INTO concepts (name, category, method, language_id) VALUES ('println', 'S', 'S', (select id from languages where name = 'Swift')); 
