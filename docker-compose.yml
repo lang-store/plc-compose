@@ -14,6 +14,7 @@ services:
             - ./init.sql:/docker-entrypoint-initdb.d/init.sql
             - ./js.sql:/docker-entrypoint-initdb.d/js.sql
             - ./python.sql:/docker-entrypoint-initdb.d/python.sql
+            - ./l_C#.sql:/docker-entrypoint-initdb.d/l_C#.sql
 
 
 networks:
