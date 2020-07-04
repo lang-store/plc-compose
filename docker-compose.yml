@@ -12,9 +12,10 @@ services:
           - "5432:5432"
         volumes:
             - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-            - ./js.sql:/docker-entrypoint-initdb.d/js.sql
-            - ./python.sql:/docker-entrypoint-initdb.d/python.sql
-            - ./l_C#.sql:/docker-entrypoint-initdb.d/l_C#.sql
+            # - ./js.sql:/docker-entrypoint-initdb.d/js.sql
+            - ./z-full.sql:/docker-entrypoint-initdb.d/z-full.sql
+            # - ./Zplusplus.sql:/docker-entrypoint-initdb.d/Zplusplus.sql
+            # - ./ZC#.sql:/docker-entrypoint-initdb.d/ZC#.sql
 
 
 networks:
